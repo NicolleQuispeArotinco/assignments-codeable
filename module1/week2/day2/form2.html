@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Form</title>
+    <link rel="stylesheet" href="styles/form2.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Ready to get started?</h1>
+    <h2>Prepare to join one of the top lawyer communities</h2>
+    <form action="" method="">
+        <label for="name">
+            First name <br>
+            <input  class="inp" type="text" name="first-name" required placeholder=" Name">
+        </label>
+        <br>
+        <label for="last-name">
+            Last name <br>
+            <input class="inp" type="text" name="last-name" required>
+        </label>
+        <br>
+        <label for="email">
+            Email <br>
+            <input class="inp" type="email" name="email-address" required>
+        </label>
+        <br>
+        <label for="zip-code">
+            Zip Code <br>
+            <input class="inp" type="text" name="zip" pattern="[1-6]*" maxlength="6" placeholder=" 123456" required>
+        </label>
+        <br>
+        <label for="password">
+            Password <br>
+            <input class="inp" type="password" name="pasword" required>
+        </label>
+        <br>
+        <label for="practicing-status" class="status">
+            Practicing Status <br>
+            <select class="inp" name="practicing-status" id="" multiple required>
+                <option value="0" selected>Practicing Lawyer</option>
+                <option value="1">Non Practicing Lawyer</option>
+                <option value="2">Retired Lawyer</option>
+            </select>
+        </label>
+        <br>
+        <label for="expertise">
+            Area of legal expertise <br>
+            <select class="inp" name="legal-expertise" id="">
+                <option value="antitrust">Antitrust</option>
+                <option value="civil-rights">Civil Rights</option>
+                <option value="immigration">Immigration</option>
+                <option value="memes">Memes</option>
+                <option value="gaming">Gaming</option>
+                <option value="pretending-work">Pretending to work</option>
+                <option value="other" selected>Other</option>
+            </select>
+        </label>
+        <br>
+        <label for="years">
+            Years of experience <br>
+            <input class="inp" type="text" name="years_of_experiance" pattern="[0-60]*" maxlength="2" required>
+        </label>
+        <br>
+        <label for="languages" class="language">
+            Languages <span>(Optional)</span> <br>
+            <select name="languages" id="" multiple>
+                <option value="es">Spanish</option>
+                <option value="en">English</option>
+                <option value="do">Dothraki</option>
+                <option value="ky">Kryptonese</option>
+                <option value="kl">Klingon</option>
+                <option value="vu">Vulcan</option>
+                <option value="ali">Alienese</option>
+                <option value="el">Elvish</option>
+            </select>
+        </label>
+        <br>
+        <label for="phone-number">
+            Cell Phone Number <span>(Optional)</span> <br>
+            <input class="inp" type="text" name="phone-number" maxlength="9" placeholder=" #######">
+        </label>
+        <br>
+        <div class="check">
+            <label for="ethnicity" >
+                Ethnicity <span>(Optional)</span>
+            </label>
+            <br>
+            <input type="checkbox" name="ethnicity" value="earthling">Earthling
+            <input type="checkbox" name="ethnicity" value="martian">Martian
+            <input type="checkbox" name="ethnicity" value="asgardian">Asgardian             
+        </div>
+        <br>
+        <input type="checkbox" name="terms" value="terms_of_use" checked required>I swear that I totally read the terms of use
+        <br>
+        <input class="btn" type="submit" name="submit" value="Create your account">
+    </form>
+</body>
+</html>
