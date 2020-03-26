@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo img{
+    height: 24px;
+    width: 108px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    margin-left: 205px;
+}
+.frame{
+    display: grid;
+    grid-row-gap:18px;
+}
+.group1, .group2, .group3, .group4{
+    display: grid;
+    grid-template-columns: repeat(3,295px) ;
+    grid-column-start:2;
+    grid-column-gap:28px;
+}
