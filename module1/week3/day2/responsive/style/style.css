@@ -1,0 +1,245 @@
+
+.container{
+    font-family: 'Overpass';
+    padding:50px;
+    margin: 0 auto;
+}
+/*feature1*/
+.feature1{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr;
+    grid-gap:60px;
+    grid-template-areas: 
+     "info first first"
+     "info first first";
+    justify-content: center;
+    padding-bottom: 90px;
+}
+.info{
+    grid-area: info;
+}
+.first-c{
+    width: 262px;
+    height: 197px;
+}
+.first{
+    grid-area: first;
+    padding-left: 50px;
+}
+.info h2{
+    font-size: 36px;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 10px;
+}
+.info p{
+    font-weight: normal;
+    font-size: 17px;
+    color: #666666;
+}
+.first{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+}
+.first i{
+    color: white;
+    background-color: #0ad1bd;
+    padding: 12px;
+    border-radius: 50%;
+}
+.first h4{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.05px;
+    color: black;
+}
+.first p, .feature2 p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+/*feature2*/
+.feature2 .main{
+    width:555px;
+    height: 463px;
+}
+.feature2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "main info2"
+    "main info2";
+    grid-gap: 100px;
+}
+.feature2 h5{
+    font-size: 20px;
+}
+.main{
+    grid-area: main;
+}
+.info2{
+    grid-area: info2;
+    padding-top: 20px;
+}
+.custom{
+    display: grid;
+    grid-template-columns:0.5fr 5fr;
+    grid-template-areas: 
+    "img subt"
+    "img infor";
+    padding-top: 20px;
+}
+.custom img{
+    grid-area: img;
+    justify-content: center;
+}
+.custom h5{
+    grid-area: subt;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.custom p{
+    grid-area: infor;
+}
+
+.native{
+    display: grid;
+    grid-template-columns:0.5fr 5fr;
+    grid-template-areas: 
+    "img2 subt"
+    "img2 infor";  
+    padding-top: 20px;
+}
+.native img{
+    grid-area: img2;
+    justify-content: center;
+}
+.native h5{
+    grid-area: subt;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.native p{
+    grid-area: infor;
+}
+
+@media screen and (min-width:769px) and (max-width:1439px){
+    .feature1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:5px;
+        grid-template-areas: 
+         "info first first"
+         "info first first";
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .info{
+        grid-area: info;
+    }
+    .first{
+        grid-area: first;
+    }
+    /*feature2*/
+    .feature2{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "main1 main1"
+        "info2 info2";
+        grid-gap: 10px;
+    }
+    .feature2 .main{
+        grid-area: main1;
+        width: 100%;   
+        height: 500px;
+    }
+    .info2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        grid-template-areas: 
+        "title title"
+        "custom native";
+        grid-gap: 15px;
+    }
+    h1{
+        grid-area: title;
+    }
+    .custom{
+        grid-area: custom;
+    }
+    .native{
+        grid-area: native;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        padding:10px
+    }
+    .feature1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "info"
+        "first";
+    }
+    .info{
+        grid-area: info;
+    }
+    .first{
+        grid-area: first;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four";
+    }
+    .one{
+        grid-area: one;
+        max-width: 768px;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+    }
+    .four{
+        grid-area: four;
+    }
+    .feature2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "info2"
+        "main";
+    }
+    .main{
+        grid-area: main;
+    }
+    img .main{
+        width: 100%;;
+    }
+    .info2{
+        grid-area: info2;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "custom"
+        "native";
+    }
+    h1{
+        grid-area: title;
+        text-align: center;
+    }
+    .custom{
+        grid-area: custom;
+    }
+    .native{
+        grid-area: native;
+    }
+
+}
